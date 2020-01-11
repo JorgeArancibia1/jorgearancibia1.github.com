@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="loadImage();" class="load-image">Load Image</button>
+
+
+    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+    
+    <script>
+
+        function loadImage() {
+            var preload = new createjs.LoadQueue();
+            preload.addEventListener("fileload", handleFileComplete);
+            preload.loadFile("/MongoDB.png");
+        }
+
+        function handleFileComplete(event) {
+            document.body.appendChild(event.result);
+        }
+
+    </script>
+</body>
+
+</html>
