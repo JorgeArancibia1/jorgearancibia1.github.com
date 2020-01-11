@@ -7,6 +7,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
+var GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -62,6 +63,16 @@ module.exports = {
     ]
   },
   plugins:[
+    new GhPagesWebpackPlugin({
+      path: './public',
+      options: {
+          message: 'Update Home Page',
+          user: {
+              name: '年糕小豆汤',
+              email: 'ooiss@qq.com'
+          }
+      }
+    }),
     new MiniCssExtractPlugin({
       filename:'css/[name].[hash].css',
       chunkFilename: 'css/[id].[hash].css'
