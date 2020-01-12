@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-var GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
+var GhPagesWebpackPlugin = require('gh-pages-webpack-plugin'); 
 
 module.exports = {
   entry: {
