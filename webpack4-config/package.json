@@ -1,7 +1,7 @@
 {
   "name": "basewebpack4",
   "version": "1.0.0",
-  "homepage": "https://jorgearancibia1.github.io/webpack4/",
+  "homepage": "https://jorgearancibia1.github.io/webpack4-config/",
   "description": "Es una base de webpack para poder comenzar proyectos con react.",
   "main": "index.js",
   "scripts": {
