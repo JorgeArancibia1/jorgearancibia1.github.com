@@ -63,16 +63,6 @@ module.exports = {
     ]
   },
   plugins:[
-    new GhPagesWebpackPlugin({
-      path: './public',
-      options: {
-          message: 'Update Home Page',
-          user: {
-              name: '年糕小豆汤',
-              email: 'ooiss@qq.com'
-          }
-      }
-    }),
     new MiniCssExtractPlugin({
       filename:'css/[name].[hash].css',
       chunkFilename: 'css/[id].[hash].css'
