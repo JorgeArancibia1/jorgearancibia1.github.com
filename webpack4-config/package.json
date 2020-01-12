@@ -8,7 +8,8 @@
     "server": "server --port 3001 --watch --static ./dist",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build:dll": "webpack --config ./webpack.dll.config.js",
-    "build": "webpack --config ./webpack.config.js"
+    "build": "webpack --config ./webpack.config.js",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "webpack"
@@ -31,6 +32,7 @@
     "babel-loader": "8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "3.2.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "3.2.0",
     "mini-css-extract-plugin": "0.8.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
