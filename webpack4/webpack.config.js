@@ -7,7 +7,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-var GhPagesWebpackPlugin = require('gh-pages-webpack-plugin'); 
+var ghpages =  require ( ' gh-pages ' );
+
+ghpages . publicar ( ' dist ' , función ( err ) {});
 
 module.exports = {
   entry: {
@@ -69,7 +71,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Webpack 4',
-      template: path.resolve(__dirname, 'public/index.html') // Toma el index.html e inserta el javascript generado en el output.
+      template: path.resolve(__dirname, 'index.html') // Toma el index.html e inserta el javascript generado en el output.
     }),
     new webpack.DllReferencePlugin({
       manifest: require('./modules-manifest.json')
