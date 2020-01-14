@@ -51,7 +51,7 @@ function cargar(){
 
 function progresoCarga(){
   if(preloader.progress == 1){
-    var interval = window.setInterval(frameLoop,5000/50);
+    var interval = window.setInterval(frameLoop,5001/50);
 
     //IMAGENES
     fondo = new Image();
